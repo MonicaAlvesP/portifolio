@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
 export default function Projetos() {
-    return (
+    return(
         <>
-            <h2>Projetos</h2>
+            <h1>Eu sou Projetos!</h1>
         </>
     )
 }
