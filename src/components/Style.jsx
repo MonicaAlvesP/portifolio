@@ -43,7 +43,7 @@ h1{
 `
 
 export const Div = styled.div`
-    height: 20%%;
+    height: 20%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
