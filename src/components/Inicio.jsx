@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import FotoPessoal from '../assets/img/Foto_de_Perfil.png'
+import FotoPessoal from '../assets/img/Foto_perfil.svg'
 import Instagram from '../assets/icons/instagram-alt.svg'
 import Linkedin from "../assets/icons/linkedin.svg"
 import Facebook from '../assets/icons/facebook.svg'
@@ -23,15 +23,15 @@ const Container = styled.div`
 
 
 const Foto = styled.img`
-    max-width: 30%;
+    max-width: 25%;
     height: auto;
-    margin-bottom: 20px;
-    border-radius: 50%;
+    margin-left: 1rem;
 `
 
 const Box = styled.div`
     display: flexbox;
-    padding: 3rem;
+    margin-top: 1rem;
+    padding: 2rem;
 
 p {
     padding-top: 2rem;
@@ -43,7 +43,7 @@ p {
 `
 
 const Logo = styled.img`
-    margin-top: 2rem;
+    margin-top: 1rem;
     max-width: 3rem;
 `
 

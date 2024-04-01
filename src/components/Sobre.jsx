@@ -3,40 +3,23 @@ import VainaWeb from "../assets/icons/vnw sem fundo 1.svg"
 import AdaTech from "../assets/icons/AdaTech.png"
 import Udemy from "../assets/icons/Udemy.svg"
 
+import Astronalta from "../assets/img/astronalta.png"
+
 import Html from "../assets/icons/html.svg"
 import JavaScript from "../assets/icons/java-script.svg"
 import Css from '../assets/icons/css.svg'
 import StyledComponents from '../assets/icons/StyledComponent.png'
 import Git from '../assets/icons/git.svg'
 import Python from '../assets/icons/python.svg'
+import * as S from "./Style.jsx"
 
-import styled from "styled-components"
-
-const Main = styled.main`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: solid yellow;
-`
-
-const Section = styled.section`
-    border: solid red;
-    display: grid;
-    grid-template-columns: '1fr 1fr';
-    background-color: aliceblue;
-`
-
-const Imagens = styled.img`
-    max-width: 80px;
-    height: auto;
-`
 
 export default function Sobre() {
 
     const [estudos, setEstudos] = useState([
         { curso: "Desenvolvimento Front-end + AWS", imagem: VainaWeb },
         { curso: "Git e Versionamento", imagem: AdaTech },
-        { curso: "JavaScript e TypeScript do básico ao avançado", imagem: Udemy }
+        { curso: "JavaScript e TypeScript", imagem: Udemy }
     ])
 
     const [tecnologias, setTecnologias] = useState([
@@ -50,27 +33,26 @@ export default function Sobre() {
     )
 
     return (
-        <Main>
-            <Section>
-                <h2>ESTUDOS</h2>
+        <S.Main>
+            <S.Section>
+                <h1>ESTUDOS</h1>
                 {estudos.map((estudos) => (
-                    <div>
+                    <S.Div>
                         <h3>{estudos.curso}</h3>
-                        <img src={estudos.imagem} alt="Cursos" />
-                    </div>
+                        <S.Imagens src={estudos.imagem} alt="Cursos" />
+                    </S.Div>
                 ))}
+            </S.Section>
 
-            </Section>
-
-            <Section>
-                <h2>HABILIDADES</h2>
+            <S.Section>
+                <h1>HABILIDADES</h1>
                 {tecnologias.map((habilidades) => (
-                    <div>
+                    <S.Div>
                         <h3>{habilidades.nome}</h3>
-                        <Imagens src={habilidades.imagem} alt="Tecnologias" />
-                    </div>
+                        <S.Imagens src={habilidades.imagem} alt="Tecnologias" />
+                    </S.Div>
                 ))}
-            </Section>
-        </Main>
+            </S.Section>
+        </S.Main>
     )
 }
