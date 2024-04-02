@@ -1,7 +1,7 @@
 import React from "react";
-import Inicio from "./Inicio";
-import Sobre from "./Sobre";
-import Projetos from "./Projetos";
+import Inicio from "./Inicio/Inicio.jsx";
+import Sobre from "./Sobre/Sobre.jsx";
+import Projetos from "./Projetos/Projetos.jsx";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import * as S from './Style.jsx'

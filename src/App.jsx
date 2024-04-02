@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
 
-    background-image: url('../src/assets/img/background.jpg');
+    background-image: url('../src/assets/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Moon Flower", sans-serif;

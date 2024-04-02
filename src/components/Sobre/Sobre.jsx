@@ -1,17 +1,16 @@
 import React, { useState } from "react"
-import VainaWeb from "../assets/icons/vnw sem fundo 1.svg"
-import AdaTech from "../assets/icons/AdaTech.png"
-import Udemy from "../assets/icons/Udemy.svg"
+import VainaWeb from "./icons/vnw sem fundo 1.svg"
+import AdaTech from "./icons/AdaTech.png"
+import Udemy from "./icons/Udemy.svg"
 
-import Astronalta from "../assets/img/astronalta.png"
 
-import Html from "../assets/icons/html.svg"
-import JavaScript from "../assets/icons/java-script.svg"
-import Css from '../assets/icons/css.svg'
-import StyledComponents from '../assets/icons/StyledComponent.png'
-import Git from '../assets/icons/git.svg'
-import Python from '../assets/icons/python.svg'
-import * as S from "./Style.jsx"
+import Html from "./icons/html.svg"
+import JavaScript from "./icons/java-script.svg"
+import Css from './icons/css.svg'
+import StyledComponents from './icons/StyledComponent.png'
+import Git from './icons/git.svg'
+import Python from './icons/python.svg'
+import * as S from "./StyleSobre"
 
 
 export default function Sobre() {
@@ -33,26 +32,26 @@ export default function Sobre() {
     )
 
     return (
-        <S.Main>
-            <S.Section>
+        <main>
+            <section>
                 <h1>ESTUDOS</h1>
                 {estudos.map((estudos) => (
-                    <S.Div>
+                    <div>
                         <h3>{estudos.curso}</h3>
-                        <S.Imagens src={estudos.imagem} alt="Cursos" />
-                    </S.Div>
+                        <img src={estudos.imagem} alt="Cursos" />
+                    </div>
                 ))}
-            </S.Section>
+            </section>
 
-            <S.Section>
+            <section>
                 <h1>HABILIDADES</h1>
                 {tecnologias.map((habilidades) => (
-                    <S.Div>
+                    <div>
                         <h3>{habilidades.nome}</h3>
-                        <S.Imagens src={habilidades.imagem} alt="Tecnologias" />
-                    </S.Div>
+                        <img src={habilidades.imagem} alt="Tecnologias" />
+                    </div>
                 ))}
-            </S.Section>
-        </S.Main>
+            </section>
+        </main>
     )
 }
