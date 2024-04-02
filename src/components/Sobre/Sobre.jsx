@@ -32,8 +32,8 @@ export default function Sobre() {
     )
 
     return (
-        <main>
-            <section>
+        <S.Sobre>
+            <S.Estudos>
                 <h1>ESTUDOS</h1>
                 {estudos.map((estudos) => (
                     <div>
@@ -41,9 +41,9 @@ export default function Sobre() {
                         <img src={estudos.imagem} alt="Cursos" />
                     </div>
                 ))}
-            </section>
+            </S.Estudos>
 
-            <section>
+            <S.Habilidades>
                 <h1>HABILIDADES</h1>
                 {tecnologias.map((habilidades) => (
                     <div>
@@ -51,7 +51,7 @@ export default function Sobre() {
                         <img src={habilidades.imagem} alt="Tecnologias" />
                     </div>
                 ))}
-            </section>
-        </main>
+            </S.Habilidades>
+        </S.Sobre>
     )
 }
