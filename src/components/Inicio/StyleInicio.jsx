@@ -30,7 +30,7 @@ export const Info = styled.section`
 
 
 @media(min-width: 330px) and (max-width: 768px){
-    height: 100vh;
+    height: 115vh;
     width: 45vh;
     flex-direction: column;
 }
@@ -62,7 +62,7 @@ p{
     justify-content: space-around;
 
     img{
-        width: 20px;
+        width: 40px;
     }
 
     h2{

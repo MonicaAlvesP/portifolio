@@ -20,7 +20,7 @@ p{
 `
 
 const Img = styled.img`
-    height: 20vh;
+    height: 22vh;
     width: 10vw;
 `
 
