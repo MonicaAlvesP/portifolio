@@ -25,12 +25,12 @@ const Img = styled.img`
 `
 
 
-export default function ComponenteComProps({imagem, titulo, children}){
-    return(
-            <Props>
-                <Img src={imagem} />
-                <h2>{titulo}</h2>
-                {children}
-            </Props>
+export default function ComponenteComProps({ imagem, titulo, children }) {
+    return (
+        <Props>
+            <Img src={imagem} />
+            <h2>{titulo}</h2>
+            {children}
+        </Props>
     )
 }

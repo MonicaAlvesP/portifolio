@@ -6,6 +6,7 @@ import Patrocinadores from "./img/Patrocinadores.svg"
 import PagStrangerThings from "./img/Mundo Normal.svg"
 import Calculadora from "./img/Calculadora.png"
 import NLWCopa from "./img/Card Copa.png"
+import Enigmax from './img/Enigmax.png'
 
 import ComponenteComProps from "./ComponentComProps"
 
@@ -88,6 +89,15 @@ export default function Projetos() {
                         titulo="Patrocinadores">
                         <h3>USESTATE, USEEFFECT, DOM, STYLED-COMPONENTS</h3>
                         <p>JS,HOOKS, STYLED-COMPONENTS, DOM</p>
+                    </ComponenteComProps>
+                </S.Componentes>
+
+                <S.Componentes>
+                    <ComponenteComProps
+                        imagem={Enigmax}
+                        titulo="Enigmax">
+                        <h3>Projeto API de filmes</h3>
+                        <p>JS,HOOKS, STYLED-COMPONENTS, API</p>
                     </ComponenteComProps>
                 </S.Componentes>
             </S.Projetos>
