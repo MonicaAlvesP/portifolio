@@ -1,15 +1,10 @@
-# Portifólio de Mõnica Alves
+<h1> >.< <i>Bem-vindo ao meu portifólio >.<</i></h1>
 
-Bem-vindo ao meu portifólio! Aqui você encontrará um coleção dos meus projetos, e habilidades.
+<p> Aqui você encontrará um coleção dos meus projetos, e habilidades.</p>
 
-## Agradecimentos
-
-**Querida Professora Karynne,**
-
-Espero que esta mensagem chegue a vc! Gostaria de aproveitar este pequeno espaço para expressar minha profunda gratidão pelos ensinamentos passados.
-
-Cada aula foi uma jornada de aprendizado e descoberta, sempre nos motivando  a alcançar nosso potencial máximo, nos encorajando a pensar criticamente, a questionanr e explorar novas ideias. Suas orientações e conselhos foram inextimáveis e certamente terão um impacto duradouro em minha vida.
-
-Obrigada pela paciência conosco <3
-
-Você têm meu mais sincero respeito e admiração.
+ <details align="left">
+   <sumary></sumary>
+   <div>
+     Feito com muito ❤️ por mim!
+   </div>
+ </details>
