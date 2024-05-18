@@ -2,6 +2,8 @@ import React from "react";
 import Inicio from "./Inicio/Inicio.jsx";
 import Sobre from "./Sobre/Sobre.jsx";
 import Projetos from "./Projetos/Projetos.jsx";
+import Logo from "../assets/logo.png"
+import { CiFacebook, CiInstagram, CiLinkedin } from "react-icons/ci";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import * as S from './Style.jsx'
@@ -20,12 +22,20 @@ export default function Navegacao() {
             <header>
                 <BrowserRouter>
                     <S.Navigation>
+                    <img src={Logo} alt="" />
                         <S.List>
                             {/* (TO = para) um link para tal lugar (sobre, projetos e inicio */}
                             <li> <Link to="/"> Inicio </Link> </li>
                             <li> <Link to="/Sobre"> Sobre </Link> </li>
                             <li> <Link to="/Projetos"> Projetos </Link> </li>
                         </S.List>
+                        
+                        <S.List>
+                            <li> <a href="https://www.instagram.com/monicapereira.dev/"><CiInstagram /></a> </li>
+                            <li> <a href="https://www.linkedin.com/in/monica-apereira/"><CiFacebook /></a> </li>
+                            <li> <a href="https://www.facebook.com/monicapereira.dev"><CiLinkedin /></a> </li>
+                        </S.List>
+                            
                     </S.Navigation>
 
                     <Routes>

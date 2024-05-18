@@ -20,8 +20,8 @@ p{
 `
 
 const Img = styled.img`
-    height: 22vh;
-    width: 10vw;
+    height: 16vh;
+    width: 8vw;
 `
 
 
