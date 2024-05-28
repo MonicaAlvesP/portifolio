@@ -1,29 +1,41 @@
 import styled from "styled-components";
 
 export const Navigation = styled.nav`
-    background-color: #082639;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+  height: 12vh;
+  background-attachment: fixed;
+  background-color: black;
+  z-index: 1000;
+
+  img {
+    height: 15vh;
+    align-items: center;
+  }
 `
 
 export const List = styled.ul`
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20vw;
 
-    a{
-        text-decoration: none;
-        color: tomato;
-        font-size: 2rem;
-        font-weight: 600;
-    }
+a{
+  font-family: "Roboto";
+  text-decoration: none;
+  color: #ffefff;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
 
-    a:hover{
-        color: magenta;
-        font-weight: 600;
-    }
+  a:hover{
+    color: #d9c0d8;
+    text-shadow: 0px 1px 10px violet;
+    font-weight: 600;
+}
 
-    li{
-        list-style: none;
-    }
+  li{
+    list-style: none;
+    margin: 1rem;
+}
 `

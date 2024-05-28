@@ -1,37 +1,18 @@
 import React, { useState } from "react"
-import FotoPessoal from './img/perfil.png'
-import Instagram from './icon/instagram.svg'
-import Linkedin from "./icon/linkedin.svg"
-import Facebook from './icon/facebook.svg'
 
 import * as S from './StyleInicio'
 
 export default function Inicio() {
 
-    const [apresentacao, setApresentacao] = useState([
-        { link: "https://www.instagram.com/monicapereira.dev/", logo: Instagram },
-        { link: "https://www.linkedin.com/in/monica-apereira/", logo: Linkedin },
-        { link: "https://www.facebook.com/monicapereira.dev", logo: Facebook }
-    ])
-
-    return (
-        <S.Inicial>
-            <S.Info>
-                <S.Foto src={FotoPessoal} alt="" />
-                    <S.Apresentacao>
-                    <h2>Olá, me chamo Mônica!</h2>
-                    <p>Bem-vindo ao meu portfólio. Sou uma desenvolvedora de software apaixonada por criar soluções incríveis e impactantes.
-                        Ao longo dos anos, adquiri habilidades em várias tecnologias e estou sempre em busca de aprender mais.
-                        Sinta-se à vontade para explorar meu trabalho e entrar em contato comigo através das redes sociais abaixo.
-                    </p>
-                
-                {apresentacao.map((redeSociais) => (
-                        <a href={redeSociais.link}>
-                            <S.Icones src={redeSociais.logo} alt="Minhas redes sociais" />
-                        </a>
-                ))}
-                    </S.Apresentacao>
-            </S.Info>
-        </S.Inicial>
-    )
+  return (
+    <S.Inicial>
+      <S.Info>
+        <S.Apresentacao>
+          <h1>Mônica Alves Pereira</h1>
+          <h3>| Desenvolvedora Fullstack |</h3>
+        </S.Apresentacao>
+        <S.Foto src="https://media.licdn.com/dms/image/D4D03AQHkqvorfgx3Ig/profile-displayphoto-shrink_800_800/0/1713963344035?e=1721260800&v=beta&t=M4-wS6cGxt00_qo680dWFgS_xhG62vaa0_hJ4R5WW4s" alt="Foto pessoal" />
+      </S.Info>
+    </S.Inicial>
+  )
 }
