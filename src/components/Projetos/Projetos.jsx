@@ -14,9 +14,9 @@ import * as S from './StyledProjetos'
 
 export default function Projetos() {
     return (
-        <main>
+        <S.Container>
             <S.Titulo>
-                <h1>- PROJETOS FEITOS COM HTML E CSS -</h1>
+                <h1>- Projetos com html e css -</h1>
             </S.Titulo>
 
             <S.Projetos>
@@ -42,7 +42,7 @@ export default function Projetos() {
                 <S.Componentes>
                     <ComponenteComProps
                     imagem={NLWCopa}
-                    titulo="NLW copa">
+                    titulo="Next Level Week copa">
                         <h3>NLW COPA CARD</h3>
                         <p>HTML, CSS, DOM</p>
                     </ComponenteComProps>
@@ -51,7 +51,7 @@ export default function Projetos() {
             </S.Projetos>
 
         <S.Titulo>
-            <h1>- PROJETOS EM JAVASCRIPT E REACT -</h1>
+            <h1>- Projetos em JavaScript e React -</h1>
         </S.Titulo>
 
             <S.Projetos>
@@ -103,6 +103,6 @@ export default function Projetos() {
             </S.Projetos>
 
 
-        </main>
+        </S.Container>
     )
 }

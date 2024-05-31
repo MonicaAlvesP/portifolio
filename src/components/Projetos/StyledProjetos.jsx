@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
+export const Container = styled.main`
+  background-color: #1f1f1f;
 
+  img {
+      height: 8rem;
+      width: 6rem;
+    }
+`
 
 export const Projetos = styled.section`
     display: flex;
     justify-content: space-around;
-    margin-bottom: 8vh;
 
 @media(min-width: 320px) and (max-width: 768px) {
     flex-direction: column;
@@ -14,25 +20,26 @@ export const Projetos = styled.section`
 `
 
 export const Componentes = styled.div`
-    width: 18vw;
+    width: 25rem;
     height: 35vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(8, 38, 57, 0.9);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: -1em 0 .4em black;
     border-radius: 30px;
+    margin: 2rem;
 
 h3{
-    color: #FF0D3A;
-    padding-top: 1vh;
+    color: #ad4d8a;
     text-align: center;
+    font-size: 0.8rem;
+    font-weight: 200;
 }
 
 @media(min-width: 320px) and (max-width: 768px) {
-    width: 45vh;
+    width: 90%;
     height: 45vh;
-    margin-top: 8vh;
+    margin: 1rem;
 
     img{
         width: 30vh;
@@ -42,17 +49,14 @@ h3{
 `
 
 export const Titulo = styled.div`
-    height: 10vh;
-
-h1{
     text-align: center;
-    margin-top: 8vh;
-    color: aliceblue;
-    text
+    font-family: "Sacramento";
+    font-weight: 200;
+    color: #829fc5;
+    padding: 1rem;
 
-}
-
-@media(min-width: 320px) and (max-width: 768px) {
-    font-size: 1rem;
-}
+    @media(min-width: 320px) and (max-width: 768px) {
+        font-weight: 200;
+        padding: 2rem;
+    }
 `

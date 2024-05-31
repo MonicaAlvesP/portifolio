@@ -8,7 +8,10 @@ const Props = styled.div`
 
 h2{
     text-align: center;
-    color: #08E7E7;
+    color: #838ca3;
+    font-size: 1.3rem;
+    font-weight: 200;
+    font-family: 'Sacramento';
 }
 
 p{
@@ -17,11 +20,16 @@ p{
     font-size: 0.7rem;
     color: aliceblue;
 }
+
+@media (max-width: 768px) {
+        flex-direction: column; // Se necessário para telas menores
+        align-items: center; // Se necessário para telas menores
+    }
 `
 
 const Img = styled.img`
-    height: 16vh;
-    width: 8vw;
+    max-width: 15rem;
+    max-height: 10rem;
 `
 
 
